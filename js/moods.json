@@ -1,0 +1,72 @@
+{
+    "Meditation": [
+        ["Calm", 4],
+        ["Peaceful", 3],
+        ["Meditative", 2],
+        ["Relaxing", 2],
+        ["Ambient", 1]
+    ],
+    "Mosh Pit": [
+        ["Crunk", 2],
+        ["Angry", 2],
+        ["Aggressive", 2],
+        ["Pumped up", 2],
+        ["Energetic", 1],
+    ],
+    "Sad Machine": [
+        ["Wistful", 3],
+        ["Dreamy", 1],
+        ["Longing", 1],
+        ["Relaxed", 1],
+        ["Hopeful", 1]
+    ],
+    "The Funeral": [
+        ["Sad", 4],
+        ["Depressed", 2],
+        ["Angsty", 2],
+        ["Frustrated", 2],
+        ["Bummed", 1]
+    ],
+    "Young Blood": [
+    	["Happy", 3],
+    	["Energetic", 3],
+    	["Motivated", 2],
+    	["Optimistic", 2],
+    	["Cheerful", 2]
+    ],
+    "Angels": [
+    	["Calm", 3],
+    	["Sad", 3],
+    	["Love", 2],
+    	["Reflective", 2],
+    	["Heartbroken", 1]
+    ],
+    "Hunger of the Pine": [
+    	["Thoughtful", 2],
+    	["Chill", 2],
+    	["Peaceful", 1],
+    	["Lonely", 1],
+    	["Sneaky", 1]
+    ],
+    "Pumpin Blood": [
+    	["Happy", 4],
+    	["Pumped", 3],
+    	["Upbeat", 1],
+    	["Excited", 1],
+    	["Motivated", 1]
+    ],
+    "Warriors": [
+    	["Aggressive", 3],
+    	["Rebellious", 2],
+    	["Rage", 1],
+    	["Intense", 1],
+    	["Emotional", 1]
+    ],
+    "Californication": [
+    	["Chill", 4],
+    	["Laid-back", 3],
+    	["Relaxed", 2],
+    	["Catchy", 1],
+    	["Awesome", 1]
+    ]
+}
