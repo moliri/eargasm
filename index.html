@@ -5,72 +5,38 @@
 		<title>Eargasm</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="js/script.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles2.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,400,700,400italic,300italic,500,100italic,700italic,300,900italic,100,500italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<h1>Eargasm</h1>
+		<div class="container">
+			<h1>Eargasm</h1>
+			<img src="img/eargasm.png" />
+			</br>
+			<p class="description">Welcome to Eargasm! Help us understand the relations between emotions and music by listening to the following clips of music and selecting how you feel.</p>
+			</br>
 
-		<p>Welcome to Eargasm! Help us understand the relations between emotions and music by listening to the following clips of music and selecting how you feel.</p>
-		</br>
-		<img src="img/eargasm.png" />
-		</br>
-		<div id="player"></div>
-		<script>
-	      var tag = document.createElement('script');
-
-	      tag.src = "https://www.youtube.com/iframe_api";
-	      var firstScriptTag = document.getElementsByTagName('script')[0];
-	      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-	      var player;
-	      function onYouTubeIframeAPIReady() {
-	        player = new YT.Player('player', {
-	          height: '390',
-	          width: '640',
-	          loadPlaylist: {
-	          	listType:'playlist',
-			//add new video ids here.
-	          	list: ['5NRuD9Y0JQ0', 'KNByf1o4T_8', 'RPyQAF2SkrE', 'UPW8y6woTBI', '0YuSg4mts9E', '_nW5AF0m9Zw', 'dCCXq9QB-dQ', '3j4I0PqNzKE', 'fmI_Ndrxy14', 'YlUKcNNmywk'],
-	          	index: parseInt(0),
-	          	suggestedQUality: 'small'
-	          },
-	          events: {
-	            'onReady': onPlayerReady,
-	            'onStateChange': onPlayerStateChange
-	          }
-	        });
-	      }
-
-	      function onPlayerReady(event) {
-	      	event.target.loadPlaylist(['5NRuD9Y0JQ0', 'KNByf1o4T_8', 'RPyQAF2SkrE', 'UPW8y6woTBI', '0YuSg4mts9E', '_nW5AF0m9Zw', 'dCCXq9QB-dQ', '3j4I0PqNzKE', 'fmI_Ndrxy14', 'YlUKcNNmywk']);
-	        // event.target.playVideo();
-	      }
-
-	      var done = false;
-	      function onPlayerStateChange(event) {
-	        if (event.data == YT.PlayerState.PLAYING) {
-	          setTimeout(nextVideo, 20000);
-	          var plIndex = player.getPlaylistIndex(); 
-		      	if (plIndex == 0) player.seekTo(39);
-		      	if (plIndex == 1) player.seekTo(50);
-		      	if (plIndex == 2) player.seekTo(25);
-		      	if (plIndex == 3) player.seekTo(20);
-		      	if (plIndex == 4) player.seekTo(35);
-		      	if (plIndex == 5) player.seekTo(55);
-		      	if (plIndex == 6) player.seekTo(120);
-		      	if (plIndex == 7) player.seekTo(73);
-		      	if (plIndex == 8) player.seekTo(83);
-		      	if (plIndex == 9) player.seekTo(85);
-	        }
-	      }
-	      function nextVideo() {
-	      	player.nextVideo();
-	      	
-	      }
-	      function stopVideo() {
-	        player.stopVideo();
-	      }
-    	</script>
+			<div id="player"></div>
+			<div class="options">
+				<form>
+					<input type="checkbox" value="ecstatic">Ecstatic<br>
+					<input type="checkbox" value="joyful">Joyful<br>
+					<input type="checkbox" value="happy">Happy<br>
+					<input type="checkbox" value="scared">Scared<br>
+					<input type="checkbox" value="apprehensive">Apprehensive<br>
+					<input type="checkbox" value="amazed">Amazed<br>
+					<input type="checkbox" value="surprised">Surprised<br>
+					<input type="checkbox" value="depressed">Depressed<br>
+					<input type="checkbox" value="sad">Sad<br>
+					<input type="checkbox" value="pensive">Pensive<br>
+					<input type="checkbox" value="loathful">Loathful<br>
+					<input type="checkbox" value="disgusted">Disgusted<br>
+					<input type="checkbox" value="bored">Bored<br>
+					<input type="checkbox" value="angry">Angry<br>
+					<input type="checkbox" value="annoyed">Annoyed<br>
+					<input type="text" placeholder="other">
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	color: #00769a;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #ffe9a7;
+}
+
+.container {
+	text-align: center;
+}
+
+.description {
+	width: 50%;
+	margin: 0 auto;
+}
+
+img {
+	width: 20%;
+	margin-top: 2%;
+}
+
+.options {
+	width: 25%;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 2%;
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
