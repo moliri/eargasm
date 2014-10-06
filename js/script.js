@@ -48,7 +48,7 @@ function onPlayerStateChange(event) {
 }
 function nextVideo() {
 	var plIndex = player.getPlaylistIndex();
-	if (plIndex == 1) {
+	if (plIndex == 9) {
 		showFinal();
 	} else {
 		player.nextVideo();
