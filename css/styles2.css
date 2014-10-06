@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f7f7;
 }
 
 h1 {
@@ -11,6 +12,16 @@ h1 {
 	margin: 0;
 	padding: 10px 0;
 	background-color: #ffe9a7;
+}
+
+a {
+	color: #00769a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	margin-bottom: 0px;
 }
 
 .container {
@@ -35,4 +46,39 @@ img {
 	-webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+}
+
+#one {
+	width: 20px;
+}
+
+#two {
+	width: 40px;
+}
+
+#three {
+	width: 60px;
+}
+
+#four {
+	width: 80px;
+}
+
+.final div {
+	height: 10px;
+	background-color: red;
+	-webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.final {
+	text-align: left;
+	width: 25%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+ul {
+	list-style-type: none;
 }

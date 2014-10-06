@@ -47,13 +47,21 @@ function onPlayerStateChange(event) {
 	}
 }
 function nextVideo() {
-	player.nextVideo();
-	
+	var plIndex = player.getPlaylistIndex();
+	if (plIndex == 1) {
+		showFinal();
+	} else {
+		player.nextVideo();
+		$('input').prop('checked', false);
+	}
 }
 function stopVideo() {
 	player.stopVideo();
 }
 
-function showOptions() {
-	
+function showFinal() {
+	stopVideo();
+	$('#player').hide();
+	$('.options').hide();
+	$('.final').html('<p><b>"Mosh Pit": </b><ul><li>Crunk:<div id="two"></div></li><li>Energetic:<div id="one"></div></li></ul></p><p><b>"The Funeral": </b><ul><li>Sad:<div id="four"></div></li><li>Depressed:<div id="two"></div></li><li>Angsty:<div id="one"></div></li></ul></p><p><b>"Californication": </b><ul><li>Chill:<div id="four"></div></li><li>Laidback:<div id="three"></div></li><li>Relaxed:<div id="two"></div></li><li>Catchy:<div id="one"></div></li></ul></p>');
 }
