@@ -69,4 +69,24 @@
     	["Catchy", 1],
     	["Awesome", 1]
     ]
+
+    "Options": [
+        ["Ecstatic"],
+        ["Joyful"],
+        ["Happy"],
+        ["Scared"],
+        ["Apprehensive"],
+        ["Amazed"],
+        ["Surprised"],
+        ["Depressed"],
+        ["Sad"],
+        ["Pensive"],
+        ["Loathful"],
+        ["Disgusted"],
+        ["Bored"],
+        ["Enraged"],
+        ["Angry"],
+        ["Annoyed"],
+        ["Other"]
+    ]
 }
