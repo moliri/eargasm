@@ -52,6 +52,17 @@
 	      }
 	      function nextVideo() {
 	      	player.nextVideo();
+	      	var plIndex = player.getPlaylistIndex(); 
+	      	if (plIndex == 1) player.seekTo(25);
+	      	if (plIndex == 2) player.seekTo(25);
+	      	if (plIndex == 3) player.seekTo(25);
+	      	if (plIndex == 4) player.seekTo(25);
+	      	if (plIndex == 5) player.seekTo(25);
+	      	if (plIndex == 6) player.seekTo(25);
+	      	if (plIndex == 7) player.seekTo(25);
+	      	if (plIndex == 8) player.seekTo(25);
+	      	if (plIndex == 9) player.seekTo(25);
+	      	
 	      }
 	      function stopVideo() {
 	        player.stopVideo();
