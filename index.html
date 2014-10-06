@@ -11,6 +11,7 @@
 		<h1>Eargasm</h1>
 		<div id="player"></div>
 		<img src="img/eargasm.png" />
+		</br>
 		<script>
 	      var tag = document.createElement('script');
 
@@ -27,7 +28,7 @@
 	          loadPlaylist: {
 	          	listType:'playlist',
 			//add new video ids here.
-	          	list: ['UhPSFDz32Yw', 'jvJUFsrt_44', 'ArEvEztFb70'],
+	          	list: ['5NRuD9Y0JQ0', 'KNByf1o4T_8', 'HAIDqt2aUek', 'UPW8y6woTBI', '0YuSg4mts9E', '_nW5AF0m9Zw', 'dCCXq9QB-dQ', '3j4I0PqNzKE', 'fmI_Ndrxy14', 'YlUKcNNmywk'],
 	          	index: parseInt(0),
 	          	suggestedQUality: 'small'
 	          },
@@ -39,14 +40,14 @@
 	      }
 
 	      function onPlayerReady(event) {
-	      	event.target.loadPlaylist(['UhPSFDz32Yw', 'jvJUFsrt_44', 'ArEvEztFb70']);
+	      	event.target.loadPlaylist(['5NRuD9Y0JQ0', 'KNByf1o4T_8', 'HAIDqt2aUek', 'UPW8y6woTBI', '0YuSg4mts9E', '_nW5AF0m9Zw', 'dCCXq9QB-dQ', '3j4I0PqNzKE', 'fmI_Ndrxy14', 'YlUKcNNmywk']);
 	        // event.target.playVideo();
 	      }
 
 	      var done = false;
 	      function onPlayerStateChange(event) {
 	        if (event.data == YT.PlayerState.PLAYING) {
-	          setTimeout(nextVideo, 30000);
+	          setTimeout(nextVideo, 20000);
 	        }
 	      }
 	      function nextVideo() {
